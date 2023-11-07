@@ -412,20 +412,11 @@
                 /* nav 호버 수정... */
                 #nav a div:hover::after{
                     content: '';
-                    border: 3px solid red;
-                    border-radius: 15px;
-                    /* border-color: 0 2px 4px 0 rgba(0,0,0,0.12); */
-
+                    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
                 }
 
                 #nav a:visited{
                     color: black;
-                    text-decoration: none;
-                }
-            
-                #nav a:link{
-                    color: black;
-                    text-decoration: none;
                 }
                 
                 #nav li{
@@ -452,6 +443,7 @@
                     width: 54px;
                     height: 54px;
                 }
+
 
                 #nav li:nth-of-type(1) a div::after{
                     background-position: -250px -90px;
@@ -879,14 +871,8 @@
                 }
 
                 .left-section a:visited{
-                    color: black;
+                    color: inherit;
                 }
-
-                .left-section a:link{
-                    color: black;
-                    text-decoration: none;
-                }
-
 
                 .left-section footer{
                     border-top: 1px solid var(--color_border_in);
@@ -1421,10 +1407,8 @@
                     border-bottom: 1px solid var(--color_border_in_divider);
                     padding: 21px 0;
                     line-height: 17px;
-                    display: inline-flex;
+                    text-align: ;
                 }
-
-                
 
                 .aside-area{
                     border-bottom: 1px solid var(--color_border_in_divider);
@@ -1436,130 +1420,13 @@
                 }
 
                 .corp-area{
-                    display: inline-block;
-                    width: 1280px;
-                    height: 40px;
-                    color: black;
+                    height: 118px
                 }
-
-                .notice-area div:nth-of-type(1){
-                    width: 74px;
-                }
-
-                .notice-area div:nth-of-type(2){
-                    width: 1070px;
-                }
-
-                .notice-area div:nth-of-type(3){
-
-                }
-
-                
-                .notice-area > div:nth-of-type(1) a, .notice-area > div:nth-of-type(3) a{
-                    /* display: inline-block; */
-                    text-align: left;
-                    font-size: 1.17rem;
-                    font-weight: bold;
-                    text-decoration: none;
-                    padding-left: 20px;
-                }
-                
-                .notice-area > div:nth-of-type(3) a::after{
-                    content: "";
-                    display: inline-block;
-                    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b96eea2.png);
-                    background-size: 434px 414px;
-                    background-position: -426px 0px;
-                    background-repeat: no-repeat;
-                    width: 8px;
-                    height: 12px;
-                    margin: 3px 0 0 10px;
-                    vertical-align: top;
-                }
-
-                .notice-area > div:nth-of-type(1) a:visited, .notice-area > div:nth-of-type(3) a:visited{
-                    color: black;
-                    text-decoration: none;
-                }      
-                
-                .notice-area > div:nth-of-type(1) a:link, .notice-area > div:nth-of-type(3) a:link{
-                    color: black;
-                }        
-
-                .notice-area > div > a:hover{
-                    text-decoration: underline;
-                }
-
-
-                #aside-wrap{
-                    width: 780px;
-                    height: 120px;
-                    padding: 20px 0px 0px 20px;
-                    display: grid;
-                    grid-template-rows: repeat(3, 1fr);
-                    text-align: left;
-                }
-
-                h3{
-                    margin: 0;
-                }
-
-                .corp-area ul {
-                    list-style-type: none;
-                }
-
-
-
             </style>
             <div id="footer">
-                <div class="notice-area">
-                    <div>
-                        <a href="#">공지사항</a>
-                    </div>
-                    <div></div>
-                    <div>
-                        <a href="#">서비스 전체보기</a>
-                    </div>
-                </div>
-                <div class="aside-area">
-                    <div id="aside-wrap">
-                        <div>
-                            <h3>Creators</h3>   
-                            <a href=""></a>                   
-                            <a href=""></a>
-                        </div>
-                        <div>
-                            <h3>Partners</h3>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                        <div>
-                            <h3>Developers</h3>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="corp-area">
-                    <ul>
-                        <li>회사소개</li>
-                        <li>인재채용</li>
-                        <li>제휴제안</li>
-                        <li>이용약관</li>
-                        <li>개인정보처리방침</li>
-                        <li>청소년보호정책</li>
-                        <li>네이버 정책</li>
-                        <li>고객센터</li>
-                        <li>NAVER Corp.</li>
-                    </ul>
-                </div>
+                <div class="notice-area">공지사항</div>
+                <div class="aside-area">크리에이터</div>
+                <div class="crop-area">회ㅏ사소개</div>
             </div>
         </div>
     </div>
